@@ -173,16 +173,11 @@ main {
     max-width: 690px;
 }
 
-.hero-actions,
 .project-links,
 .contact-links {
     display: flex;
     flex-wrap: wrap;
     gap: 0.65rem;
-}
-
-.hero-actions {
-    margin-top: 1.35rem;
 }
 
 .button {
@@ -206,11 +201,6 @@ main {
     background: var(--accent-strong);
     border-color: var(--accent-strong);
     transform: translateY(-2px);
-}
-
-.button-secondary {
-    background: rgba(13, 15, 18, 0.5);
-    color: var(--text);
 }
 
 .hero-facts {
@@ -899,13 +889,11 @@ main {
         font-size: clamp(2.35rem, 15vw, 2.75rem);
     }
 
-    .hero-actions,
     .contact-links {
         flex-direction: column;
     }
 
-    .button,
-    .hero-actions .button {
+    .button {
         width: 100%;
     }
 
