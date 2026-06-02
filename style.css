@@ -119,12 +119,6 @@ input {
     width: 34px;
 }
 
-.brand span:last-child {
-    color: var(--text);
-    font-weight: 850;
-    white-space: nowrap;
-}
-
 .site-nav ul {
     display: flex;
     flex-wrap: wrap;
