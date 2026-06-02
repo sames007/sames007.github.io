@@ -93,30 +93,10 @@ input {
     align-items: center;
     display: flex;
     gap: 1rem;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 0 auto;
     max-width: var(--max-width);
     padding: 0.9rem 1.25rem;
-}
-
-.brand {
-    align-items: center;
-    display: inline-flex;
-    gap: 0.65rem;
-    text-decoration: none;
-}
-
-.brand-mark {
-    align-items: center;
-    background: var(--accent);
-    border-radius: 8px;
-    color: #0a1b19;
-    display: inline-flex;
-    font-size: 0.78rem;
-    font-weight: 900;
-    height: 34px;
-    justify-content: center;
-    width: 34px;
 }
 
 .site-nav ul {
