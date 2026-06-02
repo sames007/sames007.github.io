@@ -13,8 +13,9 @@ function updateProjects() {
     projectRows.forEach((row) => {
         const tagList = row.dataset.tags.toLowerCase().split(/\s+/);
         const text = row.textContent.toLowerCase();
+        const textTokens = text.match(/[a-z0-9#+.]+/g) || [];
         const matchesFilter = activeFilter === "all" || tagList.includes(activeFilter);
-        const matchesSearch = !query || tagList.some((tag) => tag.includes(query)) || text.includes(query);
+        const matchesSearch = !query || tagList.includes(query) || textTokens.includes(query);
         const isVisible = matchesFilter && matchesSearch;
 
         row.hidden = !isVisible;

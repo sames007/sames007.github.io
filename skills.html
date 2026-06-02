@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+            name="description"
+            content="A proof-backed skills page for Saim Sameer, listing only languages, frameworks, libraries, services, and tools represented in his projects."
+    >
+    <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests"
+    >
+    <title>Skills | Saim Sameer</title>
+    <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="page-grid" aria-hidden="true"></div>
+
+<header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Saim Sameer home">
+            <span class="brand-mark" aria-hidden="true">SS</span>
+            <span>Saim Sameer</span>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html" aria-current="page">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="content" class="page-shell">
+    <section class="page-hero" aria-labelledby="skills-title">
+        <p class="eyebrow">Skills</p>
+        <h1 id="skills-title">A skill map that stays honest about depth.</h1>
+        <p>
+            Java is my strongest foundation. The other languages, frameworks, and tools
+            below are included because they appear in the six portfolio projects, not
+            because I want to oversell them.
+        </p>
+    </section>
+
+    <section class="skill-board" aria-label="Skill groups">
+        <article class="skill-column skill-column-strong">
+            <p class="panel-label">Strongest foundation</p>
+            <h2>Java</h2>
+            <p>Object-oriented programming, JavaFX, FXML, desktop app logic, file handling, and simulations.</p>
+        </article>
+        <article class="skill-column">
+            <p class="panel-label">Languages represented</p>
+            <ul>
+                <li>Java</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SQL</li>
+            </ul>
+        </article>
+        <article class="skill-column">
+            <p class="panel-label">Frameworks and libraries</p>
+            <ul>
+                <li>JavaFX</li>
+                <li>FXML</li>
+                <li>ASP.NET Core</li>
+                <li>SignalR</li>
+                <li>WebRTC</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Socket.IO</li>
+                <li>Tailwind CSS</li>
+            </ul>
+        </article>
+        <article class="skill-column">
+            <p class="panel-label">Services and tools</p>
+            <ul>
+                <li>Firebase</li>
+                <li>Firestore</li>
+                <li>Firebase Storage</li>
+                <li>Docker</li>
+                <li>Render</li>
+                <li>Maven</li>
+                <li>Gemini API</li>
+                <li>Open Library API</li>
+                <li>CSV</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="evidence-section" aria-labelledby="evidence-title">
+        <div class="section-heading">
+            <p class="eyebrow">Evidence</p>
+            <h2 id="evidence-title">Where the skills show up.</h2>
+        </div>
+        <div class="evidence-table" role="table" aria-label="Project skill evidence">
+            <div role="row" class="evidence-head">
+                <span role="columnheader">Project</span>
+                <span role="columnheader">What it demonstrates</span>
+                <span role="columnheader">Stack shown</span>
+            </div>
+            <div role="row">
+                <span role="cell">TaskManagerApp</span>
+                <span role="cell">Java desktop workflow, data handling, account flow, CSV import/export, AI assistance</span>
+                <span role="cell">Java, JavaFX, SQL, CSV, Gemini</span>
+            </div>
+            <div role="row">
+                <span role="cell">Elevator Simulation</span>
+                <span role="cell">Object-oriented simulation, FXML interface, scenario controls, smoke testing</span>
+                <span role="cell">Java, JavaFX, FXML, CSS</span>
+            </div>
+            <div role="row">
+                <span role="cell">StudyBuddy</span>
+                <span role="cell">Auth-aware web app, saved study history, AI study tools, book search</span>
+                <span role="cell">TypeScript, Next.js, React, Firebase, Gemini API</span>
+            </div>
+            <div role="row">
+                <span role="cell">Collaboard Rooms</span>
+                <span role="cell">Real-time collaboration, video workflow, deployment packaging</span>
+                <span role="cell">JavaScript, C#, ASP.NET Core, SignalR, WebRTC, Docker</span>
+            </div>
+            <div role="row">
+                <span role="cell">NexTrade</span>
+                <span role="cell">Market dashboard, live quote updates, AI explanations, Python forecasting helper</span>
+                <span role="cell">JavaScript, Python, Next.js, Express, Socket.IO</span>
+            </div>
+            <div role="row">
+                <span role="cell">MazeMind</span>
+                <span role="cell">Java desktop movement, collision checks, visual pathfinding</span>
+                <span role="cell">Java, desktop UI, A*</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="closing-band" aria-labelledby="skills-closing-title">
+        <div>
+            <p class="eyebrow">Best next read</p>
+            <h2 id="skills-closing-title">See the projects behind the skill list.</h2>
+        </div>
+        <a class="button" href="projects.html">Open projects</a>
+    </section>
+</main>
+</body>
+</html>
