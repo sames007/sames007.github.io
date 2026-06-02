@@ -718,17 +718,40 @@ main {
 }
 
 @media (max-width: 760px) {
+    body {
+        line-height: 1.55;
+    }
+
     .site-nav {
-        align-items: flex-start;
-        flex-direction: column;
+        display: block;
+        padding: 0.65rem 0.75rem;
     }
 
     .site-nav ul {
-        justify-content: flex-start;
+        display: grid;
+        gap: 0.4rem;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    .site-nav a {
+        background: rgba(17, 22, 28, 0.82);
+        border: 1px solid var(--border);
+        display: flex;
+        font-size: 0.86rem;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0.5rem 0.25rem;
+        text-align: center;
+    }
+
+    .site-nav a[aria-current="page"] {
+        background: rgba(110, 231, 216, 0.1);
+        border-color: rgba(110, 231, 216, 0.42);
     }
 
     main {
-        padding: 1rem;
+        padding: 0.75rem;
     }
 
     .hero-shell {
@@ -738,35 +761,113 @@ main {
         background-position: center, center top;
         background-repeat: no-repeat;
         background-size: cover, cover;
+        gap: 1rem;
         min-height: auto;
-        padding: 1.35rem;
+        padding: 1rem;
     }
 
     .hero-copy h1 {
-        font-size: 3.35rem;
+        font-size: clamp(2.65rem, 14vw, 3.35rem);
+    }
+
+    .hero-copy p:not(.eyebrow),
+    .page-hero p:not(.eyebrow),
+    .contact-hero p:not(.eyebrow) {
+        font-size: 1rem;
+    }
+
+    .hero-facts {
+        gap: 0.65rem;
+    }
+
+    .hero-facts div,
+    .route-card,
+    .spotlight-card,
+    .skill-column,
+    .contact-card {
+        padding: 0.85rem;
     }
 
     .section-heading h2,
     .page-hero h1,
     .contact-hero h1,
     .closing-band h2 {
-        font-size: 1.85rem;
+        font-size: clamp(1.65rem, 8vw, 1.95rem);
     }
 
     .page-hero,
     .contact-hero {
         min-height: auto;
-        padding: 1.35rem;
+        padding: 1rem;
+    }
+
+    .project-explorer,
+    .evidence-section {
+        padding: 0.75rem;
+    }
+
+    .search-field input {
+        min-height: 48px;
+    }
+
+    .filter-buttons {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .filter-button {
+        min-height: 44px;
+        padding: 0.5rem 0.25rem;
     }
 
     .project-row {
         grid-template-columns: 1fr;
+        padding: 0.85rem;
+    }
+
+    .project-row-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .project-row h2 {
+        font-size: 1.28rem;
+    }
+
+    .project-meta span,
+    .skill-column li {
+        font-size: 0.82rem;
     }
 
     .project-links {
         border-top: 1px solid var(--border);
+        display: grid;
+        grid-template-columns: 1fr;
         justify-content: flex-start;
         padding-top: 0.75rem;
+    }
+
+    .project-links a,
+    .contact-links a {
+        background: rgba(13, 15, 18, 0.34);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        min-height: 44px;
+        padding: 0.55rem 0.75rem;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .skill-column {
+        min-height: auto;
+    }
+
+    .contact-photo {
+        justify-self: start;
+        width: 144px;
     }
 
     .evidence-table [role="row"] {
@@ -781,17 +882,21 @@ main {
         align-items: flex-start;
         flex-direction: column;
     }
+
+    .closing-band .button {
+        width: 100%;
+    }
 }
 
 @media (max-width: 430px) {
     .site-nav,
     main {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.65rem;
+        padding-right: 0.65rem;
     }
 
     .hero-copy h1 {
-        font-size: 2.75rem;
+        font-size: clamp(2.35rem, 15vw, 2.75rem);
     }
 
     .hero-actions,
@@ -799,7 +904,30 @@ main {
         flex-direction: column;
     }
 
-    .button {
+    .button,
+    .hero-actions .button {
         width: 100%;
+    }
+
+    .project-type,
+    .panel-label,
+    .eyebrow {
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .site-nav a,
+    .filter-button {
+        font-size: 0.78rem;
+    }
+
+    .filter-buttons {
+        gap: 0.3rem;
+    }
+
+    .project-meta,
+    .skill-column ul {
+        gap: 0.35rem;
     }
 }
