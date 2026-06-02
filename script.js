@@ -6,14 +6,21 @@ const emptyState = document.querySelector(".empty-state");
 
 let activeFilter = "all";
 
+function normalize(value) {
+    return String(value || "").trim().toLowerCase();
+}
+
+function tokenize(value) {
+    return normalize(value).match(/[a-z0-9#+.]+/g) || [];
+}
+
 function updateProjects() {
-    const query = (projectSearch?.value || "").trim().toLowerCase();
+    const query = normalize(projectSearch?.value);
     let visibleCount = 0;
 
     projectRows.forEach((row) => {
-        const tagList = row.dataset.tags.toLowerCase().split(/\s+/);
-        const text = row.textContent.toLowerCase();
-        const textTokens = text.match(/[a-z0-9#+.]+/g) || [];
+        const tagList = normalize(row.dataset.tags).split(/\s+/).filter(Boolean);
+        const textTokens = tokenize(row.textContent);
         const matchesFilter = activeFilter === "all" || tagList.includes(activeFilter);
         const matchesSearch = !query || tagList.includes(query) || textTokens.includes(query);
         const isVisible = matchesFilter && matchesSearch;
@@ -35,7 +42,7 @@ function updateProjects() {
 
 filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-        activeFilter = button.dataset.filter;
+        activeFilter = normalize(button.dataset.filter) || "all";
 
         filterButtons.forEach((item) => {
             const isActive = item === button;
