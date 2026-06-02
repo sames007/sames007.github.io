@@ -514,7 +514,7 @@ input {
 .skill-board {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1.1fr 1fr 1fr;
+    grid-template-columns: 1.05fr repeat(3, 1fr);
 }
 
 .skill-column {
