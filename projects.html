@@ -26,7 +26,7 @@
     <meta property="og:image:alt" content="Saim Sameer">
     <meta name="twitter:card" content="summary">
     <title>Projects | Saim Sameer</title>
-    <link rel="stylesheet" href="style.css?v=21">
+    <link rel="stylesheet" href="style.css?v=23">
     <script src="script.js?v=4" defer></script>
 </head>
 <body>
@@ -51,9 +51,15 @@
         <p class="eyebrow">Projects</p>
         <h1 id="projects-title">Things I have built.</h1>
         <p class="lead">
-            Desktop apps, full-stack web apps, AI tools, and real-time projects. Each card covers
-            what it does, what I used, and where to see the code or try it live.
+            Desktop apps, full-stack web apps, AI tools, and real-time projects. The live ones
+            are up top, so you can try them in your browser.
         </p>
+        <ul class="stats">
+            <li><strong>7</strong> projects</li>
+            <li><strong>3</strong> live demos</li>
+            <li><strong>5</strong> languages</li>
+            <li><strong>1</strong> team project</li>
+        </ul>
     </section>
 
     <section class="container" aria-label="Project list">
@@ -74,8 +80,9 @@
         </div>
 
         <div class="card-grid">
-            <article class="card" data-tags="web live realtime javascript csharp html css aspnet signalr webrtc mediapipe docker render">
+            <article class="card is-featured" data-tags="web live realtime javascript csharp html css aspnet signalr webrtc mediapipe docker render">
                 <div class="card-media">
+                    <span class="media-badge is-live">Live</span>
                     <img src="image/projects/collaboard-rooms.webp" alt="Collaboard Rooms with the whiteboard open and the virtual background picker" width="960" height="600" loading="lazy" decoding="async">
                 </div>
                 <div class="card-body">
@@ -98,15 +105,16 @@
                         <li>Docker</li>
                     </ul>
                     <div class="card-links">
-                        <a href="https://github.com/sames007/Collaboard_Rooms" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
-                        <a href="https://collaboard-rooms.onrender.com/index.html#room=resume-demo" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                        <a class="btn btn-primary" href="https://collaboard-rooms.onrender.com/index.html#room=resume-demo" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                        <a class="btn btn-ghost" href="https://github.com/sames007/Collaboard_Rooms" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
                         <p class="note">May take a few seconds to start</p>
                     </div>
                 </div>
             </article>
 
-            <article class="card" data-tags="web live ai typescript javascript css nextjs react tailwind firebase firestore storage gemini openlibrary">
+            <article class="card is-featured is-flipped" data-tags="web live ai typescript javascript css nextjs react tailwind firebase firestore storage gemini openlibrary">
                 <div class="card-media">
+                    <span class="media-badge is-live">Live</span>
                     <img src="image/projects/studybuddy.webp" alt="StudyBuddy home page" width="960" height="600" loading="lazy" decoding="async">
                 </div>
                 <div class="card-body">
@@ -128,14 +136,15 @@
                         <li>Gemini API</li>
                     </ul>
                     <div class="card-links">
-                        <a href="https://github.com/sames007/StudyBuddy" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
-                        <a href="https://studybuddy-backend--studybuddy-4f855.us-central1.hosted.app" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                        <a class="btn btn-primary" href="https://studybuddy-backend--studybuddy-4f855.us-central1.hosted.app" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                        <a class="btn btn-ghost" href="https://github.com/sames007/StudyBuddy" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
             </article>
 
-            <article class="card" data-tags="web live ai javascript python css nextjs react node express socketio tailwind recharts gemini alphavantage coingecko newsapi docker render dashboard">
+            <article class="card is-featured" data-tags="web live ai javascript python css nextjs react node express socketio tailwind recharts gemini alphavantage coingecko newsapi docker render dashboard">
                 <div class="card-media">
+                    <span class="media-badge is-live">Live</span>
                     <img src="image/projects/nextrade.webp" alt="NexTrade dashboard with market search and AI summary" width="960" height="600" loading="lazy" decoding="async">
                 </div>
                 <div class="card-body">
@@ -157,8 +166,8 @@
                         <li>Socket.IO</li>
                     </ul>
                     <div class="card-links">
-                        <a href="https://github.com/sames007/NexTrade" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
-                        <a href="https://nextrade-jgp0.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                        <a class="btn btn-primary" href="https://nextrade-jgp0.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                        <a class="btn btn-ghost" href="https://github.com/sames007/NexTrade" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
                         <p class="note">May take a few seconds to start</p>
                     </div>
                 </div>
@@ -247,6 +256,7 @@
 
             <article class="card" data-tags="game unity csharp team multiplayer netcode relay shaderlab hlsl procedural">
                 <div class="card-media is-placeholder" aria-hidden="true">
+                    <span class="media-badge">Team project</span>
                     <p class="placeholder-title">Escape 4 Now</p>
                     <p class="placeholder-note">Unity · In development</p>
                 </div>
