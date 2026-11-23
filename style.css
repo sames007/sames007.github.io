@@ -497,7 +497,7 @@ main {
 }
 
 .project-shot {
-    align-self: start;
+    align-self: center;
     aspect-ratio: 16 / 10;
     grid-row: span 2;
     background: var(--surface);
