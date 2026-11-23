@@ -10,42 +10,38 @@
     >
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <meta name="theme-color" content="#0d0f12">
+    <meta name="theme-color" content="#0b0d10">
     <title>Page not found | Saim Sameer</title>
-    <link rel="stylesheet" href="/style.css?v=20">
+    <link rel="stylesheet" href="/style.css?v=21">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
-<div class="page-grid" aria-hidden="true"></div>
 
 <header class="site-header">
-    <nav class="site-nav" aria-label="Primary navigation">
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/skills.html">Skills</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-        </ul>
-    </nav>
+    <div class="container header-inner">
+        <a class="brand" href="/index.html">Saim Sameer</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/skills.html">Skills</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<main id="content" class="page-shell">
-    <section class="page-hero" aria-labelledby="not-found-title">
+<main id="content">
+    <section class="container page-head" aria-labelledby="not-found-title">
         <p class="eyebrow">404</p>
         <h1 id="not-found-title">That page does not exist.</h1>
-        <p>
-            The link may be old or mistyped. Everything on this site is reachable
-            from the menu above.
+        <p class="lead">
+            The link may be old or mistyped. Everything on this site is reachable from the menu above.
         </p>
-    </section>
-
-    <section class="closing-band" aria-labelledby="not-found-next">
-        <div>
-            <p class="eyebrow">Where to go</p>
-            <h2 id="not-found-next">Start with the projects.</h2>
+        <div class="actions">
+            <a class="btn btn-primary" href="/projects.html">Open projects</a>
+            <a class="btn btn-ghost" href="/index.html">Go home</a>
         </div>
-        <a class="button" href="/projects.html">Open projects</a>
     </section>
 </main>
 </body>

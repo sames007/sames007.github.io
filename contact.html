@@ -14,7 +14,7 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="canonical" href="https://sames007.github.io/contact.html">
-    <meta name="theme-color" content="#0d0f12">
+    <meta name="theme-color" content="#0b0d10">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Saim Sameer">
     <meta property="og:title" content="Contact | Saim Sameer">
@@ -27,89 +27,92 @@
     <meta name="twitter:card" content="summary">
     <title>Contact | Saim Sameer</title>
     <link rel="preload" href="image/profile.jpg" as="image">
-    <link rel="stylesheet" href="style.css?v=20">
+    <link rel="stylesheet" href="style.css?v=21">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
-<div class="page-grid" aria-hidden="true"></div>
 
 <header class="site-header">
-    <nav class="site-nav" aria-label="Primary navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html" aria-current="page">Contact</a></li>
-            <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-        </ul>
-    </nav>
+    <div class="container header-inner">
+        <a class="brand" href="index.html">Saim Sameer</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<main id="content" class="page-shell">
-    <section class="contact-hero" aria-labelledby="contact-title">
+<main id="content">
+    <section class="container hero" aria-labelledby="contact-title">
         <div>
             <p class="eyebrow">Contact</p>
             <h1 id="contact-title">Open to learning, feedback, and opportunities.</h1>
-            <p>
+            <p class="lead">
                 I am looking for opportunities where I can contribute, keep improving,
                 and learn from programmers who care about building things the right way.
             </p>
-        </div>
-        <img
-                src="image/profile.jpg"
-                alt="Saim Sameer"
-                class="contact-photo"
-                width="320"
-                height="320"
-        >
-    </section>
-
-    <section class="contact-grid" aria-label="Contact links and profile facts">
-        <article class="contact-card contact-card-primary">
-            <p class="panel-label">Reach me</p>
-            <h2>Let's connect.</h2>
-            <p>
-                I am open to internships, entry-level programming roles, and feedback
-                on the projects I have been building.
-            </p>
-            <div class="contact-links">
-                <a href="mailto:sames@farmingdale.edu">sames@farmingdale.edu</a>
-                <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
-                <a href="https://github.com/sames007" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://www.linkedin.com/in/saim-sameer-6849b934a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <div class="actions">
+                <a class="btn btn-primary" href="mailto:sames@farmingdale.edu">Email me</a>
+                <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume <span aria-hidden="true">↗</span></a>
             </div>
-        </article>
-
-        <article class="contact-card">
-            <p class="panel-label">Quick context</p>
-            <dl class="profile-facts">
-                <div>
-                    <dt>School</dt>
-                    <dd>Farmingdale State College</dd>
-                </div>
-                <div>
-                    <dt>Status</dt>
-                    <dd>Computer Science senior, graduating December 2026</dd>
-                </div>
-                <div>
-                    <dt>Strongest foundation</dt>
-                    <dd>Java and JavaFX project work</dd>
-                </div>
-                <div>
-                    <dt>Project interests</dt>
-                    <dd>Useful apps, clear interfaces, AI-assisted features, real-time tools</dd>
-                </div>
-            </dl>
-        </article>
+        </div>
+        <img class="portrait" src="image/profile.jpg" alt="Saim Sameer" width="640" height="466">
     </section>
 
-    <section class="closing-band" aria-labelledby="contact-closing-title">
-        <div>
-            <p class="eyebrow">Before reaching out</p>
-            <h2 id="contact-closing-title">The project page gives the fastest overview of my work.</h2>
+    <section class="container" aria-label="Contact details">
+        <div class="contact-grid">
+            <article class="panel">
+                <h2>Reach me</h2>
+                <p>
+                    I am open to internships, entry-level programming roles, and feedback
+                    on the projects I have been building.
+                </p>
+                <ul class="contact-list">
+                    <li><span>Email</span><a href="mailto:sames@farmingdale.edu">sames@farmingdale.edu</a></li>
+                    <li><span>Resume</span><a href="resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf <span aria-hidden="true">↗</span></a></li>
+                    <li><span>GitHub</span><a href="https://github.com/sames007" target="_blank" rel="noopener noreferrer">github.com/sames007 <span aria-hidden="true">↗</span></a></li>
+                    <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/saim-sameer-6849b934a/" target="_blank" rel="noopener noreferrer">Saim Sameer <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </article>
+
+            <article class="panel">
+                <h2>Quick context</h2>
+                <dl class="facts">
+                    <div>
+                        <dt>School</dt>
+                        <dd>Farmingdale State College</dd>
+                    </div>
+                    <div>
+                        <dt>Status</dt>
+                        <dd>Computer Science senior, graduating December 2026</dd>
+                    </div>
+                    <div>
+                        <dt>Strongest foundation</dt>
+                        <dd>Java and JavaFX project work</dd>
+                    </div>
+                    <div>
+                        <dt>Project interests</dt>
+                        <dd>Useful apps, clear interfaces, AI-assisted features, real-time tools</dd>
+                    </div>
+                </dl>
+            </article>
         </div>
-        <a class="button" href="projects.html">Review projects</a>
     </section>
 </main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© 2026 Saim Sameer</p>
+        <ul>
+            <li><a href="https://github.com/sames007" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/saim-sameer-6849b934a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
