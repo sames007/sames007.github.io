@@ -13,6 +13,7 @@ Static GitHub Pages portfolio for Saim Sameer, a senior Computer Science student
 - `resume.pdf` is the public resume. It leaves out home address and phone number.
 - `favicon.svg` is the browser tab icon.
 - `image/profile.jpg` is the profile photo, also used for link previews.
+- `image/projects/` holds one 960x600 WebP screenshot per project card, taken from each project's README.
 
 ## Local Preview
 

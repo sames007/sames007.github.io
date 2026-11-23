@@ -465,6 +465,22 @@ main {
     transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
 }
 
+.project-row:has(> .project-shot) {
+    grid-template-columns: 44px 260px minmax(0, 1fr) minmax(128px, auto);
+}
+
+.project-shot {
+    aspect-ratio: 16 / 10;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
+
 .project-row:hover {
     background: var(--surface-3);
     border-color: rgba(110, 231, 216, 0.42);
@@ -538,6 +554,7 @@ main {
 
 .project-row .link-note {
     color: var(--soft);
+    contain: inline-size;
     flex-basis: 100%;
     font-size: 0.78rem;
     margin-top: 0.1rem;
@@ -715,6 +732,10 @@ main {
     .contact-photo {
         width: 180px;
     }
+
+    .project-row:has(> .project-shot) {
+        grid-template-columns: 44px 180px minmax(0, 1fr) minmax(128px, auto);
+    }
 }
 
 @media (max-width: 760px) {
@@ -820,7 +841,8 @@ main {
         padding: 0.5rem 0.25rem;
     }
 
-    .project-row {
+    .project-row,
+    .project-row:has(> .project-shot) {
         grid-template-columns: 1fr;
         padding: 0.85rem;
     }
