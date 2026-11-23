@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
             name="description"
-            content="Projects by Saim Sameer, including Java desktop apps, full-stack web apps, AI tools, and real-time collaboration work."
+            content="Projects by Saim Sameer, including Java desktop apps, full-stack web apps, AI tools, real-time collaboration work, and a Unity game."
     >
     <meta
             http-equiv="Content-Security-Policy"
             content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; media-src 'self'; frame-src 'none'; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests"
     >
     <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Saim Sameer">
+    <meta property="og:title" content="Projects | Saim Sameer">
+    <meta property="og:description" content="Projects by Saim Sameer, including Java desktop apps, full-stack web apps, AI tools, real-time collaboration work, and a Unity game.">
+    <meta property="og:url" content="https://sames007.github.io/projects.html">
+    <meta property="og:image" content="https://sames007.github.io/image/profile.jpg">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="466">
+    <meta property="og:image:alt" content="Saim Sameer">
+    <meta name="twitter:card" content="summary">
     <title>Projects | Saim Sameer</title>
-    <link rel="stylesheet" href="style.css?v=12">
+    <link rel="stylesheet" href="style.css?v=15">
     <script src="script.js?v=4" defer></script>
 </head>
 <body>
@@ -27,6 +38,7 @@
             <li><a href="projects.html" aria-current="page">Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
     </nav>
 </header>
@@ -45,15 +57,16 @@
         <div class="project-tools" aria-label="Project filters">
             <label class="search-field">
                 <span>Search projects</span>
-                <input id="project-search" type="search" placeholder="Try Java, AI, Python, live...">
+                <input id="project-search" type="search" placeholder="Try Java, AI, Unity, live...">
             </label>
             <div>
-                <p class="project-count" aria-live="polite">6 shown</p>
+                <p class="project-count" aria-live="polite">7 shown</p>
                 <div class="filter-buttons">
                     <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button>
                     <button type="button" class="filter-button" data-filter="java" aria-pressed="false">Java</button>
                     <button type="button" class="filter-button" data-filter="web" aria-pressed="false">Web</button>
                     <button type="button" class="filter-button" data-filter="ai" aria-pressed="false">AI</button>
+                    <button type="button" class="filter-button" data-filter="game" aria-pressed="false">Game</button>
                     <button type="button" class="filter-button" data-filter="live" aria-pressed="false">Live</button>
                 </div>
             </div>
@@ -232,6 +245,34 @@
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/sames007/ElevatorSimulation" target="_blank" rel="noopener noreferrer">Repository</a>
+                </div>
+            </article>
+            <article class="project-row" data-tags="game unity csharp team multiplayer netcode relay shaderlab hlsl procedural">
+                <div class="project-index">07</div>
+                <div class="project-content">
+                    <div class="project-row-top">
+                        <p class="project-type">Team senior project</p>
+                        <span>C# / Unity</span>
+                    </div>
+                    <h2>Escape 4 Now</h2>
+                    <p>
+                        Escape room party game for 1 to 4 players with Race, Survival, King of the Hill,
+                        and Hot Potato modes, procedurally generated maps, bots, and online rooms.
+                    </p>
+                    <ul class="proof-list">
+                        <li>Local and online multiplayer with Netcode and Relay</li>
+                        <li>Procedural map generation with reachability checks</li>
+                    </ul>
+                    <div class="project-meta">
+                        <span>C#</span>
+                        <span>Unity</span>
+                        <span>Netcode</span>
+                        <span>Unity Relay</span>
+                        <span>Input System</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Cobin-Black/Escape_4_Now" target="_blank" rel="noopener noreferrer">Repository</a>
                 </div>
             </article>
         </div>

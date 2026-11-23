@@ -131,7 +131,7 @@ main {
 .hero-shell {
     background:
         linear-gradient(90deg, rgba(13, 15, 18, 0.98) 0%, rgba(17, 22, 28, 0.94) 50%, rgba(17, 22, 28, 0.2) 100%),
-        url("image/IMG_0037%20(1).jpg");
+        url("image/profile.jpg");
     background-position: center, right center;
     background-repeat: no-repeat;
     background-size: cover, auto 100%;
@@ -277,7 +277,7 @@ main {
 .spotlight-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .route-card,
@@ -683,7 +683,7 @@ main {
     .hero-shell {
         background:
             linear-gradient(90deg, rgba(13, 15, 18, 0.98), rgba(17, 22, 28, 0.84)),
-            url("image/IMG_0037%20(1).jpg");
+            url("image/profile.jpg");
         background-position: center, right center;
         background-repeat: no-repeat;
         background-size: cover, auto 100%;
@@ -719,8 +719,8 @@ main {
 
     .site-nav ul {
         display: grid;
-        gap: 0.4rem;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.35rem;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
         width: 100%;
     }
 
@@ -747,7 +747,7 @@ main {
     .hero-shell {
         background:
             linear-gradient(180deg, rgba(13, 15, 18, 0.94), rgba(17, 22, 28, 0.94)),
-            url("image/IMG_0037%20(1).jpg");
+            url("image/profile.jpg");
         background-position: center, center top;
         background-repeat: no-repeat;
         background-size: cover, cover;
