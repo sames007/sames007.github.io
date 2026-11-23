@@ -12,6 +12,8 @@ Static GitHub Pages portfolio for Saim Sameer, a senior Computer Science student
 - `script.js` runs the project search and filters.
 - `resume.pdf` is the public resume. It leaves out home address and phone number.
 - `favicon.svg` is the browser tab icon.
+- `404.html` is shown by GitHub Pages for missing pages. It uses root paths (`/style.css`) so it works at any URL depth.
+- `robots.txt` and `sitemap.xml` help search engines find every page. Update `lastmod` in the sitemap when a page changes.
 - `image/profile.jpg` is the profile photo, also used for link previews.
 - `image/projects/` holds one 960x600 WebP screenshot per project card, taken from each project's README.
 
