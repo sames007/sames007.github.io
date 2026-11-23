@@ -520,7 +520,8 @@ main {
 }
 
 .project-meta span,
-.skill-column li {
+.skill-column li,
+.course-list li {
     background: rgba(110, 231, 216, 0.09);
     border: 1px solid rgba(110, 231, 216, 0.22);
     border-radius: 8px;
@@ -533,6 +534,14 @@ main {
 .project-links {
     align-content: start;
     justify-content: flex-end;
+}
+
+.project-row .link-note {
+    color: var(--soft);
+    flex-basis: 100%;
+    font-size: 0.78rem;
+    margin-top: 0.1rem;
+    text-align: right;
 }
 
 .empty-state {
@@ -569,7 +578,8 @@ main {
     margin-top: 0.85rem;
 }
 
-.skill-column ul {
+.skill-column ul,
+.course-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -802,7 +812,7 @@ main {
 
     .filter-buttons {
         display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .filter-button {
@@ -835,6 +845,10 @@ main {
         grid-template-columns: 1fr;
         justify-content: flex-start;
         padding-top: 0.75rem;
+    }
+
+    .project-row .link-note {
+        text-align: left;
     }
 
     .project-links a,
